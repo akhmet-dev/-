@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", "Inter", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  /* Geist Dark System Colors */
+  --color-geist-surface: #141313;
+  --color-geist-surface-dim: #141313;
+  --color-geist-surface-bright: #3a3939;
+  --color-geist-surface-lowest: #0e0e0e;
+  --color-geist-surface-low: #1c1b1b;
+  --color-geist-surface-container: #201f1f;
+  --color-geist-surface-high: #2a2a2a;
+  --color-geist-surface-highest: #353434;
+  --color-geist-on-surface: #e5e2e1;
+  --color-geist-on-surface-variant: #c4c7c8;
+  --color-geist-inverse-surface: #e5e2e1;
+  --color-geist-inverse-on-surface: #313030;
+  --color-geist-outline: #8e9192;
+  --color-geist-outline-variant: #444748;
+  --color-geist-primary: #ffffff;
+  --color-geist-on-primary: #2f3131;
+  --color-geist-secondary: #c7c6c6;
+  --color-geist-blue: #006bff;
+  --color-geist-blue-hover: #0059ec;
+  --color-border-default: rgba(255, 255, 255, 0.14);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+  /* Spacing and Radius mapping */
+  --radius-sm: 0.125rem;
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus outlines according to Spec */
+  .focus-ring:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #141313, 0 0 0 4px #006bff;
+  }
+}
